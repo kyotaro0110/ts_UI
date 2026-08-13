@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JS実行テスト</title>
+</head>
+<body>
+    
+    <div id="app"> 
+        <h1 id="title">タイトル</h1>
+        <p class="message">こんにちは! </p>
+    </div>
+
+    <!-- divは分割を表す id= を使用するとjsで引数をいじることができる-->
+    <!-- idとclassの違い
+     1.id
+     役割：そのページ内で「たった一つの特別な要素」を指し示します。
+     ルール：1つのページ内で同じidを2度使ってはいけません
+     DOM操作：document.getElementById('header')のように、特定の要素をピンポイントで取得する際に使う
+     例：id="main-header",id="user-profile"など
+
+     2.class
+     役割：同じ見た目やグループの要素を「まとめて扱う」ための名前です。
+     ルール：1つのページ内で何度も繰り返して使えます。
+     DOM操作：document.getElementByClassName('item')や、
+     querySelectorAll('.item')で複数まとめて取得できます。
+     例：class="menu-item",class="btn-primary"など。
+     -->
+    <button id="myButton">ここをクリック</button>
+
+    <ul id="list">
+        <li>既存のアイテム1</li>
+        <li>既存のアイテム2</li>
+    </ul>
+    <script src = "lesson1.js"></script>
+    <script src = "lesson2.js"></script>
+</body>
+</html>
